@@ -1,0 +1,23 @@
+//Call the below functions to execute
+var data;
+$.ajax({
+    type: "GET",
+    url: 'sampleGET.php',
+	data: {myNumber: '1',myFruit:'orange'},
+    success: function(data){
+        console.log(JSON.stringify(data));
+    }
+});
+
+var result;
+$.ajax({
+    type: "POST",
+    url: 'samplePOST.php',
+    data: {No1: '1', No2: '2'},
+    success: function(data){
+        console.log(JSON.stringify(data));
+    }
+});
+
+
+
